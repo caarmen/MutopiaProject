@@ -13,8 +13,15 @@
     \new Staff \with { instrumentName = "Oboe" } \oboeNotes
     \new Staff \with { instrumentName = "1st & 2nd Altos" } \altosOneAndTwoNotes
     \new Staff \with { instrumentName = "B♭ Bass" } \bbbassNotes
-    \new Staff \with { instrumentName = "Drums" } \drumNotes
+    \new DrumStaff \with { instrumentName = "Drums" } \drumNotes
   >>
+  \layout {
+    \context { \Staff \RemoveEmptyStaves }
+    \context {
+      \DrumStaff
+      \override VerticalAxisGroup #'remove-empty = ##t
+    }
+  }
 }
 \score {
   \unfoldRepeats
