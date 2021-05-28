@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 piccoloNotes = \relative c'' {
-  \transposition d
+  \transposition des
   \key e \major
   \time 6/8
   \tempo 4. = 120
