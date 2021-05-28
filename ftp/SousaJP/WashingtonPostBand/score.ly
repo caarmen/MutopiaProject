@@ -5,6 +5,7 @@
 \include "oboe.ly"
 \include "altos12.ly"
 \include "bbbass.ly"
+\include "drums.ly"
 
 \score {
   <<
@@ -12,6 +13,7 @@
     \new Staff \with { instrumentName = "Oboe" } \oboeNotes
     \new Staff \with { instrumentName = "1st & 2nd Altos" } \altosOneAndTwoNotes
     \new Staff \with { instrumentName = "B♭ Bass" } \bbbassNotes
+    \new Staff \with { instrumentName = "Drums" } \drumNotes
   >>
 }
 \score {
@@ -21,6 +23,7 @@
     \new Staff \with { instrumentName = "Oboe" midiInstrument="oboe" } \oboeNotes
     \new Staff \with { instrumentName = "1st & 2nd Altos" midiInstrument="alto sax" } \altosOneAndTwoNotes
     \new Staff \with { instrumentName = "B♭ Bass" midiInstrument="tuba" } \transpose c c, \bbbassNotes
+    \new Staff \with { instrumentName = "Drums" } \drumNotes
   >>
   \midi {}
 }
